@@ -1,0 +1,13 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "node packages/webhook/server.js"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
+maxRestartRetries = 10
+
+[env]
+PORT = "8080"
+NODE_ENV = "production"

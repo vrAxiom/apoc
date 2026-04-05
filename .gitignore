@@ -1,0 +1,7 @@
+node_modules/
+.env
+temp_repos/
+gitea/
+postgres/
+.DS_Store
+*.log
